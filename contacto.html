@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Contacto Page</title>
+		<link rel="stylesheet" href="/contacto.css"" />
+
+		<!-- link navbar -->
+	<link
+	rel="stylesheet"
+	type="text/css"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  />
+
+  <!-- skills -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+	href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+	rel="stylesheet"
+  />
+
+  <!-- 
+		- favicon
+	  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+	
+	<!-- fin -->
+	<!-- barra navegación -->
+	
+	</head>
+	<body>
+		<header class="header">
+			<div class="logo-header">
+			  <img src="/images/logos_emma/LOGO-ROS-INTERIOR-DESIGN.png" alt="" />
+			</div>
+			<nav class="nav-menu">
+			  <input type="checkbox" id="check" />
+			  <label for="check" class="checkbtn">
+				<i class="menu-icon"><img src="/images/bars_black.png" alt="" /></i>
+			  </label>
+		
+			  <ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="works.html">TRABAJOS</a></li>
+				<li><a href="productos.html">SERVICIOS</a></li>
+				<li><a href="tienda-online.html">SHOP</a></li>
+				<li><a href="sobreMi.html">SOBRE MÍ</a></li>
+				<li><a href="contacto.html">CONTACTO</a></li>
+		
+			  </ul>
+			</nav>
+		</header>
+
+<!-- fin navbar -->
+	<!-- formulario -->
+	
+
+		
+		<div class="container">
+			<div class="foto-content">
+	  
+			<img src="/images/contacto/foto4_emma.png" id="foto" alt="">
+	  
+		  </div>
+		 
+			<form id="formulario-contacto" action="https://formspree.io/f/mpzbokrb" method="post">
+	  
+			  <h2>PEDIR PRESUPUESTO</h2>
+			  <label for="nombre">Nombre:</label>
+			  <input type="text" id="nombre" name="nombre" required>
+			
+			  <label for="email">Email:</label>
+			  <input type="email" id="email" name="email" required>
+			
+			  <label for="telefono">Teléfono:</label>
+			  <input type="tel" id="telefono" name="telefono" required>
+	  
+			  <label for="tipo-vivienda">Tipo de Vivienda:</label>
+			  <select id="tipo-vivienda" name="tipo-vivienda" required>
+				  <option value="">Seleccione una opción</option>
+				  <option value="piso">Piso</option>
+				  <option value="casa">Casa</option>
+				  <option value="loft">Loft</option>
+				</select>
+			
+			  <label for="tipo-reforma">Tipo de Reforma:</label>
+			  <select id="tipo-reforma" name="tipo-reforma" required>
+				<option value="">Selecciona una opción</option>
+				<option value="cocina">Cocina</option>
+				<option value="baño">Baño</option>
+				<option value="dormitorios">Dormitorios</option>
+				<option value="otros">Otros</option>
+			  </select>
+	  
+			  <label for="presupuesto">Presupuesto Estimado:</label>
+			  <input type="number" id="presupuesto" name="presupuesto" required>
+			  
+	  
+			  <label for="fecha">Fecha deseada para comenzar la reforma:</label>
+			  <input type="date" id="fecha" name="fecha" required>
+			 
+	  
+			  <label for="comentarios">Comentarios:</label>
+			  <textarea id="comentarios" name="comentarios"></textarea>
+			
+			  <label for="acepto-politica-privacidad">
+				<input type="checkbox" id="acepto-politica-privacidad" name="acepto-politica-privacidad" required>
+				Acepto la política de privacidad y seguridadde los datos del cliente
+			  </label>
+			  
+				<input type="submit" id="boton-enviar" value="Enviar">
+				<p class="politica-privacidad">
+				  Al enviar este formulario, aceptas nuestra <a href="#">política de privacidad y seguridad de los datos del cliente</a>.
+				</p>
+			</form>
+	  
+
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		 <!-- footer -->
+		 <footer class="footer">
+			<div class="container2">
+			  <div class="row2">
+				<div class="footer-col">
+				  <h4>Ros Interior Desing </h4>
+				  <ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="works.html">Trabajos</a></li>
+	  
+					<li><a href="productos.html">Servicios</a></li>
+	  
+					<li><a href="tienda-online.html">Shop</a></li>
+					<li><a href="sobreMi.html">Sobre Mi</a></li>
+	  
+					<li><a href="contacto2.html">Contacto</a></li>
+				  </ul>
+				</div>
+	  
+				<div class="footer-col">
+				  <h4>Sígueme</h4>
+				  <div class="social-links">
+					<a href="https://www.instagram.com/byrosinteriors/"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.linkedin.com/in/emmarosell%C3%B3/"><i class="fab fa-linkedin-in"></i></a>
+					<a href="https://www.facebook.com/espacioscondiseno"><i class="fab fa-facebook-f"></i></a>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </footer>
+
+        <script src="tienda-online.js"></script>
+	</body>
+</html>
