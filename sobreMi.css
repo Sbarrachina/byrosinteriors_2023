@@ -360,7 +360,7 @@ a:hover {
   color: #0099FF;
 }
 
-.colw_12 p:first-of-type, .colw_8 p:first-of-type, .colw_7 p:first-of-type, .colw_6 p:first-of-type {
+ .colw_8 p:first-of-type, .colw_7 p:first-of-type, .colw_6 p:first-of-type {
   font-family: 'Poppins', sans-serif;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -368,7 +368,27 @@ a:hover {
   line-height: 26px;
   font-weight: 400;
 }
-
+.colw_12 p:first-of-type{
+  font-family: 'Poppins', sans-serif;
+  padding-top: 100px;
+  padding-bottom: 8px;
+  font-size: 17px;
+  line-height: 26px;
+  font-weight: 400;
+  width: 95%;
+}
+@media (max-width: 750px){
+  .colw_12 p:first-of-type{
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    line-height: 26px;
+    font-weight: 400;
+    width: 85%;
+    padding: 20px;
+    margin-left: 20px;
+  }
+  
+} 
 strong {
   font-weight: 700;
 }
@@ -403,6 +423,10 @@ strong {
   width: 90%;
   margin-right: auto;
   margin-left: auto;
+}
+.section3{
+  width: 90%;
+
 }
 
 .backimg {
@@ -616,7 +640,13 @@ h1#title-1 {
   text-align: center;
 }
 
-
+.texto-intro{
+    font-size: 20px;
+    display: block;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-weight: 700;
+}
 
 
 
@@ -1160,7 +1190,7 @@ h5.title0 {
 
 
 .hei100 {
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 .midlle {
