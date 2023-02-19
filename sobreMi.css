@@ -284,10 +284,10 @@ flex-direction: column;
 /* fin */
 
 .pic{
-  margin-left: 150px;
+  margin-left: 250px;
 }
 .pic img{
-  width: 80%;
+  width: 70%;
 }
 
 @media(max-width: 750px){
@@ -1576,4 +1576,22 @@ h5.title0 {
   .absomid-cbp {
     width: 320px;
   }
+}
+
+/* cambiar sobre mi */
+
+.box66 a{
+  display: inline-block;
+    text-decoration: none;
+    color: white;
+    border-radius: 30px;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    margin-top: 30px;
+    transition: .5s;
+    background-color: black;
+}
+.box66 a:hover{
+    background-color: white;
+    color: rgb(13, 11, 11);
 }
