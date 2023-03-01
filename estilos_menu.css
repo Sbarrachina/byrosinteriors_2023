@@ -127,6 +127,8 @@ display: none;
     position: relative;
     transition: transform 500ms;
     display: block;
+    background-color: #eee
+    
 }
 .container img{
     width: 100%;
@@ -145,7 +147,7 @@ display: none;
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 50%;
+    width:50%;
     height: 50%;
     transform: translate(-50%,-50%);
     text-align: center ;
@@ -156,11 +158,59 @@ display: none;
     
     }
     .text {
-        color: white;
+        color: rgb(8, 8, 8);
         font-size: 16px;
         padding: 16px 32px;
     }
     
+
+/* cambios images por texto */
+ .container>div{
+    margin-top: 100px;
+ }
+
+.container h2{
+    text-align: center;
+}
+
+.container i{
+    font-size: 40px;
+    margin-left: 128px;
+    padding: 10px;
+}
+
+.container h4{
+    padding: 0px;
+    text-align: center;
+}
+.container p{
+    font-size: 18px;
+    margin: 20px;
+    text-transform: uppercase;
+
+}
+
+@media only screen and (max-width: 650px){
+    .container>div{
+        margin-top: 30px;
+     }
+    .container h2{
+        text-align: center;
+    }
+    
+    .container i{
+        font-size: 40px;
+        margin-left: 220px;
+        padding: 10px;
+    }
+    
+    .container h4{
+        padding: 0px;
+        text-align: center;
+    }
+} 
+
+
    
 @media only screen and (max-width: 996px){
    
