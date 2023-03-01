@@ -177,6 +177,7 @@ display: none;
     font-size: 40px;
     margin-left: 128px;
     padding: 10px;
+    cursor: pointer;
 }
 
 .container h4{
