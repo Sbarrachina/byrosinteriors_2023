@@ -100,9 +100,8 @@ display: none;
   padding: 0.5rem;
   display: flex;
   justify-content: center;
-  margin: 0;
+  margin: 0 auto;
   margin-top: -5px;
-  margin-right: 100px;
 }
 
 .nav-menu ul li :last-child{
