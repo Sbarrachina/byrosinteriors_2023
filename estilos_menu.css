@@ -82,8 +82,9 @@ display: none;
       display: block;
       position: fixed;
       top:20px;
-      right: 80px;
+      right: 150px;
       cursor: pointer;
+      margin-bottom: 100px;
   }
 .nav-menu ul{
   display: block;
