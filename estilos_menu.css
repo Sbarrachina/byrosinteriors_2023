@@ -106,6 +106,8 @@ display: none;
 .nav-menu ul li :last-child{
   background: none;
   padding: 0rem;
+  font-size: 17px;
+
 }
 #check:checked ~ ul{
   left: 0;
@@ -113,7 +115,7 @@ display: none;
 
 }
 .logo-header img{
-  width: 100px;
+  width: 80px;
 
 }
 }
