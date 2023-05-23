@@ -87,7 +87,7 @@ display: none;
   .menu-icon{
       display: block;
       position: fixed;
-      top:20px;
+      top:40px;
       right: 20px;
       cursor: pointer;
   }
