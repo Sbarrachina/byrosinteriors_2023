@@ -81,7 +81,6 @@ display: none;
   }
   .menu-icon{
       display: block;
-      position: fixed;
       top:50px;
       right: 140px;
       cursor: pointer;
