@@ -176,9 +176,19 @@ display: none;
 
 .container i{
     font-size: 40px;
-    margin-left: 128px;
     padding: 10px;
     cursor: pointer;
+}
+
+i.fab.fa-instagram {
+  font-size: 40px;
+  padding: 10px;
+  cursor: pointer;
+  margin-left: 155px;
+}
+
+i.bx.bx-mail-send{
+  margin-left: 140px;
 }
 
 .container h4{
@@ -195,14 +205,15 @@ display: none;
 
 @media only screen and (max-width: 650px){
     .container>div{
-        margin-top: 30px;
+        margin-top: 50px;
+        height: 280px;
      }
     .container h2{
         text-align: center;
     }
     
     .container i{
-        font-size: 40px;
+        font-size: 50px;
         margin-left: 220px;
         padding: 10px;
     }
@@ -210,6 +221,15 @@ display: none;
     .container h4{
         padding: 0px;
         text-align: center;
+    }
+    i.fab.fa-instagram {
+      font-size: 50px;
+      padding: 10px;
+      cursor: pointer;
+      margin-left: 210px;
+    }
+    i.bx.bx-mail-send{
+      margin-left: 182px;
     }
 } 
 
