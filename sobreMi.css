@@ -651,14 +651,29 @@ h1#title-1 {
 
 
 .zoom-wrap{
-  width: 80%;
+  width:70%;
   margin-left: 150px;
 }
 
 .zoom-wrap img{
   
   margin-left: -100px;
+  margin-bottom: 100px;
 }
+
+@media all and (max-width: 600px) {
+  .zoom-wrap{
+    width:80%;
+    margin-left: 150px;
+  }
+  
+  .zoom-wrap img{
+    
+    margin-left: -100px;
+    margin-bottom: 0px;
+  }
+}
+
 .white {
   background: #fff;
 }
