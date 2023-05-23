@@ -82,8 +82,8 @@ display: none;
   .menu-icon{
       display: block;
       position: fixed;
-      top:20px;
-      right: 20px;
+      top:50px;
+      right: 140px;
       cursor: pointer;
   }
 .nav-menu ul{
