@@ -101,6 +101,7 @@ display: none;
   display: flex;
   justify-content: center;
   margin: 0;
+  margin-top: -5px;
 }
 
 .nav-menu ul li :last-child{
