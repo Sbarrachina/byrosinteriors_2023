@@ -14,56 +14,60 @@ body{
     background-color: #ffffff;
     font-family: 'Poppins', sans-serif;
 
-
 }
+
+
+/* barra de navegación  */
+
 a,li{
-    font-family: 'Poppins', sans-serif;
-    color: rgb(65, 57, 57);
-    font-size: 18px;
-    margin: 10px;
-    
+  font-family: 'Poppins', sans-serif;
+  color: rgb(65, 57, 57);
+  font-size: 18px;
+  margin: 10px;
+  
 
 }
 
 .logo-header img{
-    width: 200px;
-    
+  width: 200px;
+  
 }
 header{
-    background-color:white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:.5rem 10rem;
+  background-color:white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:.5rem 10rem;
+  margin-top: 30px;
 }
 
 .nav-menu{
-    max-width: 992px;
-    margin: 0 auto;
+  max-width: 992px;
+  margin: 0 auto;
 }
 
 .nav-menu ul{
-    display: flex;
-    align-items: center;
-    
+  display: flex;
+  align-items: center;
+  
 }
 .nav-menu li{
-    margin-right: 1.5rem;
+  margin-right: 1.5rem;
 }
 .nav-menu a:hover{
-    color:#4a90d2;
+  color:#4a90d2;
 }
 
 .nav-menu li:last-child:hover{
-    background: transparent;
+  background: transparent;
 }
 
 /* Bars Menu */
 .menu-icon img{
-    width: 30px;
-    height: 30px;
-    border-radius: 2px;
-    
+  width: 30px;
+  height: 30px;
+  border-radius: 2px;
+  
 }
 .menu-icon, #check{
 display: none;
@@ -71,51 +75,61 @@ display: none;
 
 @media (max-width: 768px){
 
-    
-    .checkbtn{
-        display:block;   
-         
-    }
-    .menu-icon{
-        display: block;
-        position: fixed;
-        top:20px;
-        right: 150px;
-        cursor: pointer;
-        
-    }
+  
+  .checkbtn{
+      display:block;    
+  }
+  .menu-icon{
+      display: block;
+      position: fixed;
+      top:20px;
+      right: 20px;
+      cursor: pointer;
+  }
 .nav-menu ul{
-    display: block;
-    position: fixed;
-    top: 70px;
-    left: -100%;
-    background: white;
-    width: 100%;
-    height: 100vh;
-    right: 0;
-    
+  display: block;
+  position: fixed;
+  top: 70px;
+  left: -100%;
+  background: white;
+  width: 100%;
+  height: 100vh;
+  right: 0;
 
 }
 .nav-menu ul li{
-    display: flex;
-    justify-content: center;
-    margin: 0;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  margin: 0;
 }
 
 .nav-menu ul li :last-child{
-    background: none;
-    padding: 0rem;
+  background: none;
+  padding: 0rem;
 }
 #check:checked ~ ul{
-    left: 0;
-    transition: all .25s;
+  left: 0;
+  transition: all .25s;
 
 }
 .logo-header img{
-    width: 100px;
+  width: 100px;
 
 }
 }
+
+
+
+
+header{
+ 
+  padding:.2rem 10rem;
+}
+
+
+
+
 
 /* galeria */
 .row {
