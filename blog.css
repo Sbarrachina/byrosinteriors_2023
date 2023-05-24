@@ -241,3 +241,276 @@ ul{
       margin-left: 200px;
       
   }
+
+  /* blog contenido  */
+
+
+
+
+
+
+.row{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media(max-width:700px){
+  .row{
+      flex-direction: column;
+  }
+}
+
+/* Campus */
+
+
+/* Facilities */
+
+.facilities{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.facilities h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+.subtext{
+  text-transform: uppercase;
+
+
+}
+.facilities-col{
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+.facilities-col img{
+  width: 100%;
+  border-radius: 10px;
+}
+.facilities-col p{
+  padding: 0;
+}
+.facilities-col h3{
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* slider video */
+
+.gallery-slider {
+  position: relative;
+  top: 50px;
+}
+
+.slider {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  gap: 10px;
+}
+
+.slide {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 20%;
+  /* Estilos adicionales para el video */
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.titulo{
+  text-align: center;
+  text-transform: uppercase;
+}
+.titulo h1{
+  font-size: 3em;
+}
+
+@media (max-width: 750px) {
+  .gallery-slider {
+    position: relative;
+    top: 50px;
+  }
+  
+  .slider {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    gap: 10px;
+    flex-wrap: nowrap; /* Evita que las imágenes se envuelvan en múltiples filas */
+  }
+  
+  .slide {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 100%; /* Cambiamos el ancho de cada slide a 100% para mostrar una sola imagen por fila */
+  }
+  
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    display: block; /* Mostramos los botones en la versión móvil */
+    z-index: 9999; /* Aseguramos que los botones estén por encima del slider */
+  }
+  
+  .prev-button {
+    left: 10px;
+  }
+  
+  .next-button {
+    right: 10px;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+/* galeria de videos */
+
+/* films page */
+
+
+
+
+
+.container-videos {
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  margin-top: 100px;
+
+}
+
+
+
+
+.title1 {
+  padding: 2rem 9% ;
+  color: rgb(11, 11, 11);
+  font-size: 2rem;
+  text-align: left;
+
+
+
+}
+  
+.video{ 
+  border: 0.12rem solid #d8d8d8;
+}
+
+
+.contvideos {
+  padding: 0 9%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* 3 columnas de 300px de ancho mínimo */
+  grid-template-rows: repeat(2, minmax(0, 1fr)); /* 2 filas con la misma altura */
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.video {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* proporción 16:9 para mantener el video */
+  position: relative;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+@media (max-width: 750px) {
+  .contvideos {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 1 columna de 250px de ancho mínimo /
+  grid-template-rows: repeat(auto-fit, minmax(0, 1fr)); / Las filas se ajustan automáticamente */
+  }
+
+
+  }
+
+  /* new letter */
+
+  #newsletter {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #newsletter h2 {
+    margin-bottom: 10px;
+  }
+  
+  #newsletterForm input {
+    padding: 10px;
+    margin-right: 10px;
+    width: 200px;
+  }
+  
+  #newsletterForm button {
+    padding: 10px 20px;
+    background-color: #e91414;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10%;
+  }
+  
+  #newsletterForm button:hover {
+    background-color: #0b0c0b;
+  }
+  
