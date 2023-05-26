@@ -37,3 +37,4 @@ document.getElementById('newsletterForm').addEventListener('submit', function(ev
     alert('Gracias por suscribirte a nuestra newsletter!');
   });
   
+

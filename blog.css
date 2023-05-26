@@ -273,6 +273,7 @@ ul{
   padding-top: 100px;
 }
 
+
 .facilities h1 {
   font-size: 3em;
   text-transform: uppercase;
@@ -289,9 +290,19 @@ ul{
   margin-bottom: 5%;
   text-align: left;
 }
+
+
 .facilities-col img{
   width: 100%;
   border-radius: 10px;
+}
+
+.facilities-col img:hover{
+  transform: scale(1.1); /* Aumento de escala al pasar el cursor por encima */
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el cursor por encima */
+  transform: scale(1.08) translateZ(0); /* Aumento de escala y efecto 3D al pasar el cursor por encima */
+
 }
 .facilities-col p{
   padding: 0;
@@ -514,3 +525,87 @@ ul{
     background-color: #0b0c0b;
   }
   
+  /* POST CON SLIDER  */
+
+  #blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .blog-post {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: calc(32.33% - 20px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+
+    transition: opacity 0.5s, transform 0.5s; /* Transiciones suaves para opacidad y transformación */
+ 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transform-style: preserve-3d; /* Efecto 3D */
+     transform: translateZ(0); /* Prevención de paralaje */
+
+}
+
+    .blog-post:hover {
+  opacity: 0.8; /* Opacidad reducida al pasar el cursor por encima */
+  transform: scale(1.1); /* Aumento de escala al pasar el cursor por encima */
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el cursor por encima */
+  transform: scale(1.02) translateZ(0); /* Aumento de escala y efecto 3D al pasar el cursor por encima */
+}
+
+
+
+  .blog-post img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .blog-post h2 {
+    margin-top: 10px;
+  }
+  
+  .blog-post p {
+    margin-top: 10px;
+  }
+
+
+  .image-container {
+    position: relative;
+  }
+
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  .prev-button {
+    left: 0;
+  }
+
+  .next-button {
+    right: 0;
+  }
+
+  
+  /* Media queries */
+  @media (max-width: 768px) {
+    #blog-posts {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .blog-post {
+      width: 100%;
+    }
+  }
