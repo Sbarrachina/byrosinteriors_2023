@@ -144,7 +144,7 @@ header{
 }
 
 .foto-blog img {
-  width: 100%;
+  width: 90%;
   margin-bottom: 10px;
   object-fit: cover;
 
@@ -183,7 +183,6 @@ header{
   @media (max-width: 768px) {
     .container-blog {
         margin: 50px auto;
-        background-color: #eee;
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 20px;
@@ -207,7 +206,6 @@ header{
     }
 
     #titulo .post-title {
-        color: red;
         font-size: 23px;
     }
 
