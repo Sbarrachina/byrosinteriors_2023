@@ -130,78 +130,96 @@ header{
 
 
 
+.container-blog {
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
 
+.foto-blog {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
 
-.container-blog{
-    margin: 50px;
-    background-color: #eee;
-    padding-top: 40px;
-    padding-left: 50px;
+.foto-blog img {
+  width: 100%;
+  margin-bottom: 10px;
+  object-fit: cover;
+
+}
+
+#titulo {
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  margin: 10px;
+}
+
+#titulo .post-title {
+  font-size: 3rem;
+  text-decoration: none; /* Eliminar la línea del enlace */
+  font-weight: bold; /* Aplicar efecto negrita o bold */
 
 }
 
 
 
-
-.foto-blog{
-    display: flex;
-    flex-direction: row;
-}
-
-.foto-blog img{
-width: 47%;
-margin: 10px;
-
-}
-#titulo{
-font-family: 'Poppins', sans-serif;
-text-decoration: underline;
-text-align: center;
-margin: 10px;
-
-}
-
-#titulo .post-title{
-    color: red;
-    font-size: 23px;
-
-}
-.titulo-emma{
-    text-align: center;
-    margin: 10px;
+.titulo-emma {
+  text-align: left;
+  margin-bottom: 10px;
 }
 
 
 
-.btn-boton {
-    display: inline-block;
-    text-decoration: none;
-    color: rgb(234, 221, 221);
-    background-color: black;
-    border-radius: 30px;
-    border: 1px solid #000;
-    padding: 10px 20px;
-    margin-top: 30px;
-    transition: .5s;
-}
 
-.btn-boton:hover {
-    background-color: white;
-    color: black;
-}
+
+
+
+
 
 @media (max-width: 768px){
 
-    .container-blog{
+  @media (max-width: 768px) {
+    .container-blog {
         margin: 50px auto;
         background-color: #eee;
-        padding-top: 40px;
-        padding-left: 0px;
-        padding-right: 10px;
-        height: 500px;
-    
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .foto-blog {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .foto-blog img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #titulo {
+        font-family: 'Poppins', sans-serif;
+        text-decoration: underline;
+    }
+
+    #titulo .post-title {
+        color: red;
+        font-size: 23px;
+    }
+
+    .titulo-emma {
+        text-align: center;
+        margin-bottom: 10px;
     }
 }
+
+    
+    }
+  
 
 /* FOOTER */
 /* footer */
