@@ -1,0 +1,178 @@
+.container-diseño {
+    display: table;
+    width: 90%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 150px;
+  }
+  
+  .row {
+    display: table-row;
+  }
+  
+  .pricing-box {
+    display: table-cell;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+
+  .pricing-box h4{
+    padding: 20px;
+  }
+
+  .title-row h4{
+    font-size: 2rem;
+  }
+  
+  .title-row {
+    margin-bottom: 0;
+    background-color: #ebe9eb;
+  }
+  
+  .price-row {
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+  
+  .price-row h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .price-row span {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .pricing-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+  
+  .uno,
+  .tres {
+    background-color: #ebe9eb;
+    height: 50px;
+    padding: 10px;
+  }
+
+  .dos{
+    height: 50px;
+    padding: 10px;
+
+  }
+  
+  .btn-row {
+    text-align: center;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e5351a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .btn:hover {
+    background-color: #101111;
+  }
+  
+  .photo {
+    max-width: 28%;
+    height: auto;
+    display: block;
+    margin-top: -100px;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    gap: 20px;
+  }
+  
+  .titulo {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+  
+  .titulo h1 {
+    font-size: 42px;
+    color: #333;
+    text-transform: uppercase;
+  }
+  
+.casita{
+    width: 10vw;
+    padding: 10px;
+}
+.image-container {
+    position: relative;
+  }
+  
+  .image-overlay {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    bottom: 10px;
+    left: 40px;
+    color: rgb(17, 16, 16);
+    padding: 5px;
+    font-size: 22px;
+  }
+  
+
+  @media (max-width: 728px) {
+    .container-diseño {
+      width: 100%;
+    }
+  
+    .pricing-box {
+      display: block;
+      margin-bottom: 30px;
+    }
+  
+    .row {
+      display: block;
+    }
+    
+  }
+  @media (max-width: 728px) {
+    .image-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .photo {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      max-width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .image-overlay {
+      display: block;
+    }
+    
+    .overlay-text {
+      position: static;
+      text-align: center;
+      margin-top: 10px;
+      font-size: 18px;
+    }
+    .casita{
+      width: 20vw;
+  }
+}
