@@ -31,3 +31,27 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+
+
+//  regalos 
+
+// Encuentra los elementos necesarios
+var enviarRegaloBtn = document.getElementById("enviar-regalo-btn");
+var regaloForm = document.getElementById("regalo-form");
+
+// Agrega un evento al botón de enviar regalo
+enviarRegaloBtn.onclick = function () {
+  // Obtén la información del formulario de regalo
+  var nombreDestinatario = document.getElementById("nombre-regalo").value;
+  var mensajeDestinatario = document.getElementById("mensaje-regalo").value;
+
+  // Puedes hacer lo que quieras con esta información, por ejemplo, enviarla a un servidor
+  console.log("Nombre del destinatario:", nombreDestinatario);
+  console.log("Mensaje para el destinatario:", mensajeDestinatario);
+
+  // Puedes también cerrar el formulario de regalo, si lo prefieres
+  regaloForm.reset();
+};
+
+
+
